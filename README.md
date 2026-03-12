@@ -6,18 +6,22 @@ SleepMetrics is a modern desktop application designed to analyze sleep quality a
 📺 Demo
 ---
 ### 🎨 Visual Experience
-The application features a responsive interface built with CustomTkinter, supporting system themes and optimized for a 980x666 workspace.
+*The application features a dedicated toggle for seamless switching between light and dark modes.*
+<br>*Features integrated real-time gauges for the live visualization of sleep quality scores.*
 
-🔍 Desktop Application
-The standalone version is designed for immediate use with a focus on clarity and technical accuracy.
+### 🔍 Desktop Application (EN/TR)
+*Optimized for a 980x666 centered window layout, this standalone application delivers a precision-focused, localized experience through a theme-aware ``CustomTkinter`` UI designed for both global and local users.*
 
-Main Interface:
-- Top-Center Positioning: Automatically centers at the top of your screen for better accessibility.
-- Theme Support: Native Dark and Light mode integration.
-- Real-time Gauges: Visual representation of sleep quality scores.
+**TURKISH UI:**
+<br><img width="670" height="687" alt="image" src="https://github.com/user-attachments/assets/b4598d99-01c8-4dd0-b83a-772d1a9f524a" />
+
+**ENGLISH UI:**
+<br><img width="670" alt="image" src="https://github.com/user-attachments/assets/19fbcc9b-2320-410a-8f60-b262fd0cdcd9" />
+
 
 ### 🌐 Web Application (Streamlit):
-A responsive and lightweight web version for instant access from any device.
+*A responsive and lightweight web version for instant access from any device.*
+<img width="670" alt="image" src="https://github.com/user-attachments/assets/75d2692a-30ef-4331-b27b-ff47140b947d" />
 
 
 ---
@@ -27,9 +31,9 @@ A responsive and lightweight web version for instant access from any device.
 
 - ***Modern GUI:*** A sleek design powered by ``CustomTkinter`` with native Dark and Light mode support.
 
-- ***Smart Analysis:*** Real-time risk estimation using scikit-learn models (Gradient Boosting / Random Forest).
+- ***Smart Analysis:*** Real-time risk estimation using scikit-learn models (``Gradient Boosting`` / ``Random Forest``).
 
-- ***Data-Driven Insights: Analyzes metrics such as heart rate, physical activity, stress levels, and BMI to provide a holistic view.
+- ***Data-Driven Insights***: Analyzes metrics such as heart rate, physical activity, stress levels, and BMI to provide a holistic view.
   
 - ***Medical Disclaimer System***: Dynamic recommendation engine and mandatory legal disclaimer components.
 
@@ -45,14 +49,33 @@ A responsive and lightweight web version for instant access from any device.
 - **Assets Manager:** Handles dynamic asset loading (icons, logos) for a consistent UI experience.
 
 ---
-## ⚙️ Backend Engine
+📊 Data Foundation
+---
+*The intelligence of SleepMetrics is built upon a synthesis of high-quality health and productivity data:*
+
+- **[Sleep Health and Lifestyle Dataset](https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset)** : Provides the core clinical metrics including sleep duration, quality, and disorder labels.
+
+- **[Sleep Health and Lifestyle](https://www.kaggle.com/datasets/adilshamim8/sleep-cycle-and-productivity)** : Provides the core clinical metrics including sleep duration, quality, and disorder labels.
+
+<br>*The data was pre-processed through a custom pipeline to normalize biometric features and handle categorical variables, ensuring the models remain robust across diverse user profiles.*
+
+---
+⚙️ Backend Engine
+---
 The analytical core utilizes two specialized machine learning models trained on the "Sleep Health and Lifestyle" dataset:
+
+<img width="410" height="110" alt="image" src="https://github.com/user-attachments/assets/ef153bc0-0191-4765-ae42-9bb2e1aa5e46" />
+
 
 - **Quality Model:** ``RandomForestRegressor`` (150 estimators) for precise quality scoring.
 
 - **Diagnosis Model:** ``GradientBoostingClassifier`` (150 estimators) for categorical disorder identification.
 
-- **Performance**: Validated through the ``SleepEngine`` training pipeline to ensure high prediction accuracy.
+- **Performance**: The models have been rigorously validated through the ``SleepEngine`` training pipeline:
+
+  - Sleep Quality Prediction Accuracy (R2): **99.08%**
+
+  - Sleep Disorder Diagnosis Accuracy: **88.00%**
 
 ---
 🚀 Live Demo (Web Version)
