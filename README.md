@@ -128,19 +128,23 @@ streamlit run web_app.py
 
 ```bash
 SleepMetrics/
-├── assets/             # App icons and logos
-├── data/               # CSV datasets
-├── model/              # Trained .pkl files
-├── v_EN/               # English Version
-│   ├── main.py
-│   └── ui_components.py
-├── v_TR/               # Turkish Version
-│   ├── main.py
-│   └── ui_components.py
-├── engine.py           # Core ML Logic
-└── assets_manager.py   # Asset & Color Management
-├── requirements.txt      # Web/General requirements
-└── requirements-wapp.txt # Desktop App specific requirements
+├── 📁 assets/                  # App icons and logos
+├── 📁 data/                    # CSV datasets
+├── 📁 model/                   # Trained .pkl files
+├── 📁 v_EN/                    # English Version (Desktop UI)
+│   ├── 📄 main.py
+│   └── 📄 ui_components.py
+├── 📁 v_TR/                    # Turkish Version (Desktop UI)
+│   ├── 📄 main.py
+│   └── 📄 ui_components.py
+├── 📄 web_app.py               # Web Application (Streamlit Implementation)
+├── 📄 engine.py                # Core ML Logic
+└── 📄 assets_manager.py        # Asset & Color Management
+├── 📜 requirements.txt         # Web/Streamlit requirements
+└── 📜 requirements-wapp.txt    # Desktop App requirements
+├── ⚙️ .gitignore               # Files to be ignored by Git
+├── 📖 README.md                # Project documentation
+└── ⚖️ LICENSE                  # License information
 ```
 
 ---
@@ -164,3 +168,7 @@ Contributions are what make the open-source community such an amazing place to l
 ```
 
 ---
+⚠️ Medical Disclaimer
+---
+This software is for informational purposes only. The results provided do not constitute a formal medical diagnosis. Always consult with a professional healthcare provider before making any medical decisions.
+
