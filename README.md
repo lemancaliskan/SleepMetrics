@@ -123,7 +123,7 @@ streamlit run web_app.py
 ```
 
 ---
-Project Structure
+📁 Project Structure
 ---
 
 ```bash
