@@ -2,6 +2,11 @@
 
 SleepMetrics is a modern desktop application designed to analyze sleep quality and predict potential sleep disorders using advanced machine learning algorithms. By processing lifestyle and clinical data through a sleek, high-DPI interface, it provides users with data-driven insights into their sleep health.
 
+ <p align="center"><a href="https://sleepmetrics.streamlit.app">
+    <img src="https://img.shields.io/badge/SleepMetrics-38C2FF?style=for-the-badge&logo=streamlit&logoColor=white" height="55" align="center" alt="Streamlit">
+</a></p>
+
+
 ---
 📺 Demo
 ---
